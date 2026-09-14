@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/settings.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Hospital Logo">
+
+            <div>
+
+                <h2>ORE-OFE HOSPITAL</h2>
+
+                <p>Digital File Transfer System</p>
+
+            </div>
+
+        </div>
+
+        <ul>
+
+           <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li>
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li>
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li>
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="page-title">
+
+                <h1>System Settings</h1>
+
+                <p>
+                    Manage hospital profile, users, security and system preferences.
+                </p>
+
+            </div>
+
+            <div class="user-profile">
+
+                <img src="images/admin.jpg" alt="Admin">
+
+                <div>
+
+                    <h4>Administrator</h4>
+                    <span>System Manager</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- SETTINGS GRID -->
+
+        <section class="settings-grid">
+
+            <!-- HOSPITAL INFORMATION -->
+
+            <div class="settings-card">
+
+                <div class="card-header">
+
+                    <i class="fa-solid fa-hospital"></i>
+
+                    <h2>Hospital Information</h2>
+
+                </div>
+
+                <form>
+
+                    <input type="text"
+                    value="Ore-Ofe Hospital">
+
+                    <input type="text"
+                    value="123 Medical Road, Lagos">
+
+                    <input type="email"
+                    value="info@oreofehospital.com">
+
+                    <input type="text"
+                    value="+234 800 123 4567">
+
+                    <button type="submit">
+                        Save Changes
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- USER MANAGEMENT -->
+
+            <div class="settings-card">
+
+                <div class="card-header">
+
+                    <i class="fa-solid fa-users-gear"></i>
+
+                    <h2>User Management</h2>
+
+                </div>
+
+                <div class="settings-list">
+
+                    <div class="setting-item">
+                        <span>Doctors Accounts</span>
+                        <button>Manage</button>
+                    </div>
+
+                    <div class="setting-item">
+                        <span>Pharmacist Accounts</span>
+                        <button>Manage</button>
+                    </div>
+
+                    <div class="setting-item">
+                        <span>Administrator Accounts</span>
+                        <button>Manage</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SECURITY SETTINGS -->
+
+            <div class="settings-card">
+
+                <div class="card-header">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <h2>Security Settings</h2>
+
+                </div>
+
+                <div class="settings-list">
+
+                    <div class="setting-item">
+
+                        <span>Enable Two-Factor Authentication</span>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                    <div class="setting-item">
+
+                        <span>Automatic Session Timeout</span>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                    <div class="setting-item">
+
+                        <span>Audit Logs</span>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SYSTEM PREFERENCES -->
+
+            <div class="settings-card">
+
+                <div class="card-header">
+
+                    <i class="fa-solid fa-sliders"></i>
+
+                    <h2>System Preferences</h2>
+
+                </div>
+
+                <div class="settings-list">
+
+                    <div class="setting-item">
+
+                        <span>Dark Mode</span>
+
+                        <label class="switch">
+
+                            <input type="checkbox"
+                            id="darkMode">
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                    <div class="setting-item">
+
+                        <span>Email Notifications</span>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                    <div class="setting-item">
+
+                        <span>SMS Notifications</span>
+
+                        <label class="switch">
+
+                            <input type="checkbox">
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BACKUP -->
+
+            <div class="settings-card">
+
+                <div class="card-header">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h2>Database Backup</h2>
+
+                </div>
+
+                <div class="backup-actions">
+
+                    <button class="backup-btn">
+
+                        Create Backup
+
+                    </button>
+
+                    <button class="restore-btn">
+
+                        Restore Backup
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- SYSTEM INFORMATION -->
+
+            <div class="settings-card">
+
+                <div class="card-header">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <h2>System Information</h2>
+
+                </div>
+
+                <div class="info-box">
+
+                    <p><strong>Version:</strong> 1.0.0</p>
+                    <p><strong>Database:</strong> MySQL</p>
+                    <p><strong>Server:</strong> Node.js / PHP</p>
+                    <p><strong>Status:</strong> Active</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/settings.js"></script>
+
+</body>
+</html>

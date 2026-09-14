@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patient History | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/patient-history.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Hospital Logo">
+
+            <div>
+
+                <h2>ORE-OFE HOSPITAL</h2>
+
+                <p>Digital File Transfer System</p>
+
+            </div>
+
+        </div>
+
+        <ul>
+            <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li>
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li>
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="page-title">
+
+                <h1>Patient History</h1>
+
+                <p>
+                    View complete medical records and consultation history
+                </p>
+
+            </div>
+
+            <div class="user-profile">
+
+                <img src="images/doctor.jpg" alt="Doctor">
+
+                <div>
+
+                    <h4>Dr. Adewale</h4>
+
+                    <span>Medical Officer</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- SEARCH SECTION -->
+
+        <section class="search-section">
+
+            <input
+            type="text"
+            id="searchPatient"
+            placeholder="Search Patient Name, Patient ID">
+
+            <button>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Search
+
+            </button>
+
+        </section>
+
+        <!-- PATIENT PROFILE -->
+
+        <section class="patient-profile-card">
+
+            <div class="profile-header">
+
+                <img src="images/patient.jpg" alt="Patient">
+
+                <div>
+
+                    <h2>John Emmanuel</h2>
+
+                    <p>Patient ID: PAT00126</p>
+
+                </div>
+
+            </div>
+
+            <div class="patient-details">
+
+                <div>
+                    <strong>Age:</strong> 34 Years
+                </div>
+
+                <div>
+                    <strong>Gender:</strong> Male
+                </div>
+
+                <div>
+                    <strong>Blood Group:</strong> O+
+                </div>
+
+                <div>
+                    <strong>Phone:</strong> 08034567890
+                </div>
+
+                <div>
+                    <strong>Weight:</strong> 75kg
+                </div>
+
+                <div>
+                    <strong>Height:</strong> 178cm
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h2>42</h2>
+
+                <p>Total Visits</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-stethoscope"></i>
+
+                <h2>28</h2>
+
+                <p>Consultations</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+
+                <h2>19</h2>
+
+                <p>Prescriptions</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-flask"></i>
+
+                <h2>15</h2>
+
+                <p>Lab Tests</p>
+
+            </div>
+
+        </section>
+
+        <!-- MEDICAL HISTORY -->
+
+        <section class="history-section">
+
+            <div class="section-header">
+
+                <h2>Medical History Timeline</h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        15 Jun 2026
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>General Consultation</h3>
+
+                        <p>
+                            Complaints of headache, fever and fatigue.
+                        </p>
+
+                        <span>
+                            Doctor: Dr. Adewale
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        05 May 2026
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Laboratory Test</h3>
+
+                        <p>
+                            Malaria Parasite Test Conducted.
+                        </p>
+
+                        <span>
+                            Result: Positive
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-date">
+                        22 Apr 2026
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>Prescription Issued</h3>
+
+                        <p>
+                            Artemether Lumefantrine prescribed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- HISTORY TABLE -->
+
+        <section class="table-section">
+
+            <div class="table-header">
+
+                <h2>Patient Visit Records</h2>
+
+            </div>
+
+            <table id="historyTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th>Department</th>
+                        <th>Diagnosis</th>
+                        <th>Treatment</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>15 Jun 2026</td>
+                        <td>Dr. Adewale</td>
+                        <td>General Medicine</td>
+                        <td>Malaria</td>
+                        <td>Medication</td>
+
+                        <td>
+                            <span class="completed">
+                                Completed
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>05 May 2026</td>
+                        <td>Dr. Bello</td>
+                        <td>Laboratory</td>
+                        <td>Lab Investigation</td>
+                        <td>Blood Test</td>
+
+                        <td>
+                            <span class="completed">
+                                Completed
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/patient-history.js"></script>
+
+</body>
+</html>

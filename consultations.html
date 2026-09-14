@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Consultations | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/consultation.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png">
+
+            <div>
+                <h2>ORE-OFE HOSPITAL</h2>
+                <p>Digital File Transfer System</p>
+            </div>
+
+        </div>
+
+        <ul>
+
+             <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li>
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li>
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li>
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="page-title">
+
+                <h1>Consultation Management</h1>
+
+                <p>
+                    Doctor's Consultation Workspace
+                </p>
+
+            </div>
+
+            <div class="doctor-profile">
+
+                <img src="images/doctor.jpg">
+
+                <div>
+                    <h4>Dr. Adewale</h4>
+                    <span>General Physician</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PATIENT SUMMARY -->
+
+        <section class="patient-summary">
+
+            <div class="summary-card">
+
+                <h3>Patient Information</h3>
+
+                <div class="patient-grid">
+
+                    <div>
+                        <label>Patient ID</label>
+                        <span>PAT00125</span>
+                    </div>
+
+                    <div>
+                        <label>Full Name</label>
+                        <span>John Emmanuel</span>
+                    </div>
+
+                    <div>
+                        <label>Age</label>
+                        <span>34 Years</span>
+                    </div>
+
+                    <div>
+                        <label>Gender</label>
+                        <span>Male</span>
+                    </div>
+
+                    <div>
+                        <label>Blood Group</label>
+                        <span>O+</span>
+                    </div>
+
+                    <div>
+                        <label>Allergies</label>
+                        <span>Penicillin</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONSULTATION FORM -->
+
+        <section class="consultation-card">
+
+            <h2>Consultation Details</h2>
+
+            <form id="consultationForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Date of Consultation</label>
+
+                        <input type="date">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Doctor Name</label>
+
+                        <input
+                        type="text"
+                        value="Dr. Adewale">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Department</label>
+
+                        <select>
+
+                            <option>
+                                General Medicine
+                            </option>
+
+                            <option>
+                                Pediatrics
+                            </option>
+
+                            <option>
+                                Cardiology
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Follow-Up Date</label>
+
+                        <input type="date">
+
+                    </div>
+
+                </div>
+
+                <!-- VITAL SIGNS -->
+
+                <div class="section-title">
+
+                    Vital Signs
+
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Blood Pressure</label>
+
+                        <input
+                        type="text"
+                        placeholder="120/80">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Temperature</label>
+
+                        <input
+                        type="text"
+                        placeholder="36.5°C">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Pulse Rate</label>
+
+                        <input
+                        type="text">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Weight</label>
+
+                        <input
+                        type="text">
+
+                    </div>
+
+                </div>
+
+                <!-- SYMPTOMS -->
+
+                <div class="form-group">
+
+                    <label>Symptoms</label>
+
+                    <textarea rows="4"></textarea>
+
+                </div>
+
+                <!-- DIAGNOSIS -->
+
+                <div class="form-group">
+
+                    <label>Diagnosis</label>
+
+                    <textarea rows="4"></textarea>
+
+                </div>
+
+                <!-- LAB RESULTS -->
+
+                <div class="form-group">
+
+                    <label>Laboratory Results</label>
+
+                    <textarea rows="4"></textarea>
+
+                </div>
+
+                <!-- TREATMENT -->
+
+                <div class="form-group">
+
+                    <label>
+                        Recommended Treatment
+                    </label>
+
+                    <textarea rows="4"></textarea>
+
+                </div>
+
+                <!-- NOTES -->
+
+                <div class="form-group">
+
+                    <label>
+                        Prescription Notes
+                    </label>
+
+                    <textarea rows="4"></textarea>
+
+                </div>
+
+                <!-- BUTTONS -->
+
+                <div class="btn-group">
+
+                    <button
+                    type="button"
+                    class="save-btn">
+
+                        Save Consultation
+
+                    </button>
+
+                    <button
+                    type="button"
+                    class="send-btn">
+
+                        Send To Prescription Desk
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- RECENT CONSULTATIONS -->
+
+        <section class="consultation-history">
+
+            <div class="history-header">
+
+                <h2>
+                    Recent Consultations
+                </h2>
+
+                <input
+                type="text"
+                id="searchConsultation"
+                placeholder="Search Consultation">
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>CONS001</td>
+                        <td>John Emmanuel</td>
+                        <td>Dr. Adewale</td>
+                        <td>09/06/2026</td>
+
+                        <td>
+
+                            <span class="completed">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>CONS002</td>
+                        <td>Mary Abass</td>
+                        <td>Dr. Adewale</td>
+                        <td>09/06/2026</td>
+
+                        <td>
+
+                            <span class="pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/consultation.js"></script>
+
+</body>
+</html>

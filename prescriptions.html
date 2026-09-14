@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prescriptions | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/prescription.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Logo">
+
+            <div>
+                <h2>ORE-OFE HOSPITAL</h2>
+                <p>Digital File Transfer System</p>
+            </div>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li>
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li>
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+            <div class="page-title">
+
+                <h1>Prescription Management</h1>
+
+                <p>
+                    Create and Send Prescriptions to Pharmacy
+                </p>
+
+            </div>
+
+            <div class="doctor-profile">
+
+                <img src="images/doctor.jpg" alt="Doctor">
+
+                <div>
+
+                    <h4>Dr. Adewale</h4>
+
+                    <span>General Physician</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PATIENT INFORMATION -->
+
+        <section class="patient-info-card">
+
+            <h2>Patient Information</h2>
+
+            <div class="patient-grid">
+
+                <div>
+                    <label>Patient ID</label>
+                    <span>PAT00125</span>
+                </div>
+
+                <div>
+                    <label>Patient Name</label>
+                    <span>John Emmanuel</span>
+                </div>
+
+                <div>
+                    <label>Age</label>
+                    <span>34 Years</span>
+                </div>
+
+                <div>
+                    <label>Gender</label>
+                    <span>Male</span>
+                </div>
+
+                <div>
+                    <label>Blood Group</label>
+                    <span>O+</span>
+                </div>
+
+                <div>
+                    <label>Allergies</label>
+                    <span>Penicillin</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONSULTATION SUMMARY -->
+
+        <section class="consultation-summary">
+
+            <h2>Consultation Summary</h2>
+
+            <div class="summary-box">
+
+                <h4>Symptoms</h4>
+
+                <p>
+                    Fever, headache, fatigue and body weakness.
+                </p>
+
+                <h4>Diagnosis</h4>
+
+                <p>
+                    Malaria Infection.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PRESCRIPTION FORM -->
+
+        <section class="prescription-card">
+
+            <h2>Create Prescription</h2>
+
+            <form id="prescriptionForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Prescription ID</label>
+
+                        <input
+                        type="text"
+                        value="RX-2026-001">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Date</label>
+
+                        <input type="date">
+
+                    </div>
+
+                </div>
+
+                <!-- MEDICATION TABLE -->
+
+                <div class="section-title">
+
+                    Medication List
+
+                </div>
+
+                <table id="medicineTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Medication</th>
+                            <th>Dosage</th>
+                            <th>Frequency</th>
+                            <th>Duration</th>
+                            <th>Quantity</th>
+                            <th>Instructions</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <input type="text"
+                                placeholder="Medication Name">
+                            </td>
+
+                            <td>
+                                <input type="text"
+                                placeholder="Dosage">
+                            </td>
+
+                            <td>
+                                <input type="text"
+                                placeholder="Frequency">
+                            </td>
+
+                            <td>
+                                <input type="text"
+                                placeholder="Duration">
+                            </td>
+
+                            <td>
+                                <input type="number">
+                            </td>
+
+                            <td>
+                                <input type="text"
+                                placeholder="Instructions">
+                            </td>
+
+                            <td>
+
+                                <button
+                                type="button"
+                                class="remove-btn">
+
+                                    Remove
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <button
+                type="button"
+                class="add-medication">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Medication
+
+                </button>
+
+                <div class="form-group notes">
+
+                    <label>Additional Notes</label>
+
+                    <textarea
+                    rows="5"></textarea>
+
+                </div>
+
+                <div class="button-group">
+
+                    <button
+                    type="button"
+                    class="save-btn">
+
+                        Save Prescription
+
+                    </button>
+
+                    <button
+                    type="button"
+                    class="send-btn">
+
+                        Send To Pharmacy
+
+                    </button>
+
+                    <button
+                    type="button"
+                    class="print-btn">
+
+                        Print Prescription
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- QR TRACKING -->
+
+        <section class="qr-section">
+
+            <h2>Prescription Tracking</h2>
+
+            <div class="qr-card">
+
+                <div class="qr-placeholder">
+
+                    QR CODE
+
+                </div>
+
+                <h4>Tracking ID</h4>
+
+                <p>RX-2026-001</p>
+
+            </div>
+
+        </section>
+
+        <!-- PRESCRIPTION HISTORY -->
+
+        <section class="history-section">
+
+            <div class="history-header">
+
+                <h2>Prescription History</h2>
+
+                <input
+                type="text"
+                id="searchPrescription"
+                placeholder="Search Prescription">
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Patient</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>RX-2026-001</td>
+                        <td>John Emmanuel</td>
+                        <td>09/06/2026</td>
+
+                        <td>
+
+                            <span class="sent">
+
+                                Sent
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>RX-2026-002</td>
+                        <td>Mary Abass</td>
+                        <td>09/06/2026</td>
+
+                        <td>
+
+                            <span class="pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/prescriptions.js"></script>
+
+</body>
+</html>

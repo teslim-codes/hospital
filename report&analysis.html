@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports & Analytics | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/report&analysis.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Logo">
+
+            <div>
+
+                <h2>ORE-OFE HOSPITAL</h2>
+                <p>Digital File Transfer System</p>
+
+            </div>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li>
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li>
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="page-title">
+
+                <h1>Reports & Analytics</h1>
+
+                <p>
+                    Monitor hospital performance, prescriptions, visits and pharmacy activities.
+                </p>
+
+            </div>
+
+            <div class="user-profile">
+
+                <img src="images/admin.jpg" alt="Admin">
+
+                <div>
+
+                    <h4>Administrator</h4>
+                    <span>System Analytics</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- REPORT FILTERS -->
+
+        <section class="filter-section">
+
+            <select>
+
+                <option>Today</option>
+                <option>This Week</option>
+                <option>This Month</option>
+                <option>This Year</option>
+
+            </select>
+
+            <input type="date">
+
+            <input type="date">
+
+            <button class="generate-btn">
+
+                Generate Report
+
+            </button>
+
+        </section>
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-user-injured"></i>
+
+                <h2>2,480</h2>
+
+                <p>Total Patients</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-stethoscope"></i>
+
+                <h2>1,825</h2>
+
+                <p>Total Consultations</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+
+                <h2>1,560</h2>
+
+                <p>Prescriptions Issued</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-pills"></i>
+
+                <h2>1,420</h2>
+
+                <p>Medications Dispensed</p>
+
+            </div>
+
+        </section>
+
+        <!-- CHARTS -->
+
+        <section class="chart-grid">
+
+            <div class="chart-card">
+
+                <h3>Patient Visits</h3>
+
+                <canvas id="patientChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>Prescription Analysis</h3>
+
+                <canvas id="prescriptionChart"></canvas>
+
+            </div>
+
+        </section>
+
+        <section class="chart-grid">
+
+            <div class="chart-card">
+
+                <h3>Pharmacy Performance</h3>
+
+                <canvas id="pharmacyChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>Department Statistics</h3>
+
+                <canvas id="departmentChart"></canvas>
+
+            </div>
+
+        </section>
+
+        <!-- REPORT TABLE -->
+
+        <section class="table-section">
+
+            <div class="table-header">
+
+                <h2>Recent Analytics Report</h2>
+
+                <button class="export-btn">
+
+                    Export PDF
+
+                </button>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date</th>
+                        <th>Patients</th>
+                        <th>Consultations</th>
+                        <th>Prescriptions</th>
+                        <th>Dispensed</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>15 Jun 2026</td>
+                        <td>85</td>
+                        <td>78</td>
+                        <td>72</td>
+                        <td>69</td>
+
+                        <td>
+
+                            <span class="success">
+                                Completed
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>14 Jun 2026</td>
+                        <td>90</td>
+                        <td>83</td>
+                        <td>76</td>
+                        <td>71</td>
+
+                        <td>
+
+                            <span class="success">
+                                Completed
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/report&analysis.js"></script>
+
+</body>
+</html>

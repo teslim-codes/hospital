@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Logout | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/logout.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="logout-container">
+
+    <div class="logout-card">
+
+        <div class="logout-icon">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+        </div>
+
+        <h1>Logout</h1>
+
+        <p>
+            Are you sure you want to logout from the
+            Ore-Ofe Hospital Digital File Transfer System?
+        </p>
+
+        <div class="user-info">
+
+            <img src="images/admin.jpg" alt="User">
+
+            <div>
+
+                <h3>Dr. Adewale</h3>
+
+                <span>Medical Officer</span>
+
+            </div>
+
+        </div>
+
+        <div class="session-info">
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <div>
+
+                    <h4>Session Time</h4>
+
+                    <p id="sessionTime">03:24:18</p>
+
+                </div>
+
+            </div>
+
+            <div class="info-box">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <div>
+
+                    <h4>Last Login</h4>
+
+                    <p>15 June 2026</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="action-buttons">
+
+            <button class="cancel-btn"
+            onclick="goBack()">
+
+                Cancel
+
+            </button>
+
+            <button class="logout-btn"
+            onclick="logoutUser()">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./js/logout.js"></script>
+
+</body>
+</html>

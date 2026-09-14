@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --primary:#0B4DBA;
+    --secondary:#00B074;
+    --light:#F5F7FB;
+    --dark:#1E293B;
+    --gray:#64748B;
+    --danger:#EF4444;
+    --warning:#F59E0B;
+    --success:#16A34A;
+    --shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+body{
+    background:var(--light);
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:280px;
+    background:linear-gradient(180deg,#0B4DBA,#073A85);
+    position:fixed;
+    height:100%;
+    overflow-y:auto;
+    color:white;
+    transition:.4s;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:25px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.logo img{
+    width:55px;
+}
+
+.sidebar ul{
+    padding:20px 0;
+}
+
+.sidebar ul li{
+    margin:5px 15px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover{
+    background:var(--secondary);
+}
+
+/* MAIN */
+
+.main-content{
+    margin-left:280px;
+    width:calc(100% - 280px);
+    padding:25px;
+}
+
+/* HEADER */
+
+.top-header{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.page-title h1{
+    color:var(--dark);
+}
+
+.page-title p{
+    color:var(--gray);
+}
+
+.doctor-profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.doctor-profile img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+/* PATIENT INFO */
+
+.patient-info-card,
+.consultation-summary,
+.prescription-card,
+.qr-section,
+.history-section{
+    margin-top:25px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+}
+
+.patient-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.patient-grid label{
+    font-size:13px;
+    color:var(--gray);
+}
+
+.patient-grid span{
+    font-weight:600;
+}
+
+/* CONSULTATION SUMMARY */
+
+.summary-box h4{
+    margin-top:10px;
+    color:var(--primary);
+}
+
+/* FORM */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.form-group{
+    margin-top:15px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:var(--primary);
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+}
+
+table input{
+    width:100%;
+    padding:8px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+/* BUTTONS */
+
+.add-medication{
+    margin-top:15px;
+    background:var(--secondary);
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.button-group{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.save-btn{
+    background:var(--secondary);
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+}
+
+.save-btn:hover{
+    cursor: pointer;
+}
+
+.send-btn{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+}
+
+.send-btn:hover{
+    cursor: pointer;
+}
+
+.print-btn{
+    background:var(--warning);
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:8px;
+}
+
+.print-btn:hover{
+    cursor: pointer;
+}
+
+/* QR */
+
+.qr-card{
+    text-align:center;
+    padding:20px;
+}
+
+.qr-placeholder{
+    width:150px;
+    height:150px;
+    margin:auto;
+    background:#eee;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* HISTORY */
+
+.history-header{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.history-header input{
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    width:300px;
+}
+
+.sent{
+    background:#DCFCE7;
+    color:var(--success);
+    padding:5px 10px;
+    border-radius:20px;
+}
+
+.pending{
+    background:#FEF3C7;
+    color:var(--warning);
+    padding:5px 10px;
+    border-radius:20px;
+}
+
+/* SIDEBAR MOBILE */
+
+.sidebar.show{
+    left:0;
+}
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+
+    .patient-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .main-content{
+        padding: 20px;
+    }
+
+    .history-header input{
+        width: 200px;
+    }
+
+}
+
+/* =========================
+   MOBILE LARGE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+
+    /* SIDEBAR */
+    .sidebar{
+        left: -280px;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .sidebar.show{
+        left: 0;
+    }
+
+    /* MAIN CONTENT */
+    .main-content{
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* HEADER */
+    .top-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .doctor-profile{
+        margin-top: 10px;
+    }
+
+    /* GRID FIX */
+    .patient-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* BUTTON WRAP */
+    .button-group{
+        flex-wrap: wrap;
+    }
+
+    .button-group button{
+        width: 100%;
+    }
+
+    /* HISTORY SEARCH */
+    .history-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-header input{
+        width: 100%;
+    }
+
+    /* TABLE SCROLL */
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+
+    .logo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .page-title h1{
+        font-size: 18px;
+    }
+
+    .page-title p{
+        font-size: 13px;
+    }
+
+    .top-header{
+        padding: 15px;
+    }
+
+    .patient-info-card,
+    .consultation-summary,
+    .prescription-card,
+    .qr-section,
+    .history-section{
+        padding: 15px;
+    }
+
+    .save-btn,
+    .send-btn,
+    .print-btn{
+        width: 100%;
+    }
+}

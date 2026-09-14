@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sent Records | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/sent-records.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Logo">
+
+            <div>
+                <h2>ORE-OFE HOSPITAL</h2>
+                <p>Digital File Transfer System</p>
+            </div>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li>
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li>
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li>
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="page-title">
+
+                <h1>Sent Records</h1>
+
+                <p>
+                    Monitor all records transferred from Doctors to Pharmacy
+                </p>
+
+            </div>
+
+            <div class="user-profile">
+
+                <img src="images/doctor.jpg" alt="Doctor">
+
+                <div>
+                    <h4>Dr. Adewale</h4>
+                    <span>General Physician</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                <h2>1,285</h2>
+
+                <p>Total Sent Records</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-check-circle"></i>
+
+                <h2>1,120</h2>
+
+                <p>Received By Pharmacy</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h2>95</h2>
+
+                <p>Processing</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-pills"></i>
+
+                <h2>70</h2>
+
+                <p>Dispensed</p>
+
+            </div>
+
+        </section>
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+            <input
+            type="text"
+            id="searchRecord"
+            placeholder="Search Patient Name, Record ID, Doctor">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+
+        </section>
+
+        <!-- FILTERS -->
+
+        <section class="filter-section">
+
+            <select>
+
+                <option>All Status</option>
+                <option>Sent</option>
+                <option>Received</option>
+                <option>Processing</option>
+                <option>Dispensed</option>
+
+            </select>
+
+            <input type="date">
+
+            <button class="export-btn">
+
+                Export Records
+
+            </button>
+
+        </section>
+
+        <!-- RECORDS TABLE -->
+
+        <section class="table-section">
+
+            <div class="table-header">
+
+                <h2>Transferred Records</h2>
+
+            </div>
+
+            <table id="recordsTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Record ID</th>
+                        <th>Patient Name</th>
+                        <th>Doctor</th>
+                        <th>Department</th>
+                        <th>Date Sent</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>REC001</td>
+                        <td>John Emmanuel</td>
+                        <td>Dr. Adewale</td>
+                        <td>General Medicine</td>
+                        <td>15 Jun 2026</td>
+
+                        <td>
+                            <span class="status sent">
+                                Sent
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="view-btn">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>REC002</td>
+                        <td>Mary Johnson</td>
+                        <td>Dr. Adewale</td>
+                        <td>Pediatrics</td>
+                        <td>15 Jun 2026</td>
+
+                        <td>
+                            <span class="status received">
+                                Received
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="view-btn">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>REC003</td>
+                        <td>Samuel Yusuf</td>
+                        <td>Dr. Bello</td>
+                        <td>Cardiology</td>
+                        <td>15 Jun 2026</td>
+
+                        <td>
+                            <span class="status processing">
+                                Processing
+                            </span>
+                        </td>
+
+                        <td>
+                            <button class="view-btn">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- RECENT ACTIVITY -->
+
+        <section class="activity-section">
+
+            <h2>Recent Transfer Activities</h2>
+
+            <div class="activity-card">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                <div>
+
+                    <h4>
+                        Prescription Sent
+                    </h4>
+
+                    <p>
+                        Dr. Adewale sent REC001 to Pharmacy Desk.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-card">
+
+                <i class="fa-solid fa-check-circle"></i>
+
+                <div>
+
+                    <h4>
+                        Record Received
+                    </h4>
+
+                    <p>
+                        Pharmacy Desk received REC002.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/sent-records.js"></script>
+
+</body>
+</html>

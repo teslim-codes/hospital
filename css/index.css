@@ -1,0 +1,566 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --primary:#0D47A1;
+    --secondary:#00A86B;
+    --light:#F4F7FC;
+    --white:#ffffff;
+    --dark:#1E293B;
+    --orange:#FF9800;
+    --purple:#7C3AED;
+    --shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+body{
+    background:var(--light);
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:280px;
+    background:linear-gradient(180deg,#0D47A1,#06337B);
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    overflow-y:auto;
+    transition:.4s;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:25px 20px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.logo img{
+    width:60px;
+}
+
+.logo h2{
+    font-size:18px;
+}
+
+.logo p{
+    font-size:12px;
+    color:#d7e8ff;
+}
+
+.sidebar ul{
+    padding:20px 0;
+}
+
+.sidebar ul li{
+    margin:8px 15px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    padding:14px 18px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+    background:#00A86B;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main-content{
+    margin-left:280px;
+    width:calc(100% - 280px);
+    padding:25px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.top-header{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:var(--shadow);
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.hospital-info{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.hospital-info div{
+    color:#555;
+    font-size:14px;
+}
+
+.hospital-info i{
+    color:var(--secondary);
+    margin-right:5px;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.datetime{
+    text-align:center;
+}
+
+.notification{
+    position:relative;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.notification span{
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    background:red;
+    color:#fff;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.user img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title{
+    margin:25px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.page-title h1{
+    color:var(--dark);
+}
+
+.new-btn{
+    background:var(--secondary);
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+.new-btn a{
+    color: white;
+}
+.new-btn a:hover{
+    color: #0D47A1;
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    text-align:center;
+}
+
+.card i{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.blue i{
+    color:#2196F3;
+}
+
+.green i{
+    color:#00A86B;
+}
+
+.orange i{
+    color:#FF9800;
+}
+
+.purple i{
+    color:#7C3AED;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   QUICK ACTIONS
+=========================== */
+
+.quick-actions{
+    margin-top:30px;
+}
+
+.quick-actions h2{
+    margin-bottom:20px;
+}
+
+.action-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.action-grid button{
+    background:#fff;
+    border:none;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+}
+
+.action-grid button:hover{
+    transform:translateY(-5px);
+}
+
+.action-grid i{
+    display:block;
+    font-size:30px;
+    color:#0D47A1;
+    margin-bottom:10px;
+}
+
+/* ===========================
+   TABLE SECTION
+=========================== */
+
+.table-section{
+    margin-top:30px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+}
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.table-header input{
+    width:300px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#0D47A1;
+    color:#fff;
+    padding:15px;
+    text-align:left;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.active{
+    background:#D1FAE5;
+    color:#00A86B;
+}
+
+.pending{
+    background:#FFF4D6;
+    color:#FF9800;
+}
+
+table button{
+    padding:8px 14px;
+    background:#0D47A1;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+}
+
+/* ===========================
+   NOTIFICATIONS
+=========================== */
+
+.notifications{
+    margin-top:30px;
+}
+
+.notifications h2{
+    margin-bottom:20px;
+}
+
+.notification-card{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+    display:flex;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.notification-card i{
+    color:#0D47A1;
+    font-size:24px;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark-mode{
+    background:#0f172a;
+}
+
+.dark-mode .card,
+.dark-mode .table-section,
+.dark-mode .notification-card,
+.dark-mode .top-header{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode table td{
+    border-color:#334155;
+}
+/* =========================
+   TABLET (1024px and below)
+========================= */
+@media (max-width: 1024px) {
+
+    .stats{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .action-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .table-header input{
+        width: 220px;
+    }
+
+}
+
+/* =========================
+   MOBILE (768px and below)
+========================= */
+@media (max-width: 768px) {
+
+    /* SIDEBAR (HIDDEN BY DEFAULT) */
+    .sidebar{
+        left: -280px;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.show{
+        left: 0;
+    }
+
+    /* MAIN CONTENT FULL WIDTH */
+    .main-content{
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* SHOW MENU BUTTON */
+    .menu-btn{
+        display: block;
+    }
+
+    /* HEADER STACK */
+    .top-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hospital-info{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-right{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* PAGE TITLE */
+    .page-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .new-btn{
+        width: 100%;
+    }
+
+    /* STATS STACK */
+    .stats{
+        grid-template-columns: 1fr;
+    }
+
+    /* QUICK ACTIONS */
+    .action-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* TABLE RESPONSIVE */
+    .table-section{
+        overflow-x: auto;
+    }
+
+    table{
+        min-width: 700px;
+    }
+
+    /* NOTIFICATIONS STACK */
+    .notification-card{
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   SMALL MOBILE (480px and below)
+========================= */
+@media (max-width: 480px) {
+
+    .logo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .logo h2{
+        font-size: 16px;
+    }
+
+    .logo p{
+        font-size: 11px;
+    }
+
+    .page-title h1{
+        font-size: 20px;
+    }
+
+    .page-title p{
+        font-size: 13px;
+    }
+
+    .card{
+        padding: 18px;
+    }
+
+    .action-grid button{
+        padding: 18px;
+        font-size: 14px;
+    }
+
+    .table-section{
+        padding: 15px;
+    }
+
+    .notification-card{
+        padding: 15px;
+    }
+}

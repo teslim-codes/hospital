@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --primary:#0B4DBA;
+    --secondary:#00B074;
+    --white:#ffffff;
+    --light:#F5F7FB;
+    --dark:#1E293B;
+    --gray:#64748B;
+    --danger:#EF4444;
+    --warning:#F59E0B;
+    --success:#16A34A;
+    --shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+body{
+    background:var(--light);
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ======================
+SIDEBAR
+====================== */
+
+.sidebar{
+    width:280px;
+    background:linear-gradient(180deg,#0B4DBA,#073A85);
+    position:fixed;
+    height:100%;
+    overflow-y:auto;
+    color:#fff;
+    transition:.4s;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:25px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo h2{
+    font-size:18px;
+}
+
+.logo p{
+    font-size:12px;
+}
+
+.sidebar ul{
+    padding:20px 0;
+}
+
+.sidebar ul li{
+    margin:5px 15px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover{
+    background:var(--secondary);
+}
+
+/* ======================
+MAIN CONTENT
+====================== */
+
+.main-content{
+    margin-left:280px;
+    width:calc(100% - 280px);
+    padding:25px;
+}
+
+/* ======================
+HEADER
+====================== */
+
+.top-header{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:var(--shadow);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.menu-btn{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.page-title h1{
+    color:var(--dark);
+    margin-bottom:5px;
+}
+
+.page-title p{
+    color:var(--gray);
+}
+
+.doctor-profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.doctor-profile img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* ======================
+PATIENT SUMMARY
+====================== */
+
+.patient-summary{
+    margin-top:25px;
+}
+
+.summary-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+}
+
+.summary-card h3{
+    margin-bottom:20px;
+    color:var(--primary);
+}
+
+.patient-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.patient-grid label{
+    display:block;
+    color:var(--gray);
+    margin-bottom:5px;
+    font-size:13px;
+}
+
+.patient-grid span{
+    font-weight:600;
+}
+
+/* ======================
+CONSULTATION CARD
+====================== */
+
+.consultation-card{
+    margin-top:25px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+}
+
+.consultation-card h2{
+    margin-bottom:25px;
+    color:var(--primary);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:var(--primary);
+}
+
+.section-title{
+    margin:30px 0 20px;
+    padding-bottom:10px;
+    border-bottom:2px solid #eee;
+    font-size:18px;
+    font-weight:600;
+    color:var(--primary);
+}
+
+.btn-group{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.save-btn{
+    background:var(--secondary);
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.send-btn{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* ======================
+CONSULTATION HISTORY
+====================== */
+
+.consultation-history{
+    margin-top:25px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+}
+
+.history-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    gap:15px;
+}
+
+.history-header input{
+    width:300px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:var(--primary);
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+.completed{
+    background:#DCFCE7;
+    color:var(--success);
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.pending{
+    background:#FEF3C7;
+    color:var(--warning);
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+table button{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ======================
+SIDEBAR MOBILE
+====================== */
+
+.sidebar.show{
+    left:0;
+}
+
+
+/* =========================
+   TABLET (1024px and below)
+========================= */
+@media (max-width: 1024px) {
+
+    .patient-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-group{
+        flex-wrap: wrap;
+    }
+
+}
+
+/* =========================
+   MOBILE (768px and below)
+========================= */
+@media (max-width: 768px) {
+
+    /* SIDEBAR */
+    .sidebar{
+        left: -280px;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.show{
+        left: 0;
+    }
+
+    /* MAIN CONTENT FULL WIDTH */
+    .main-content{
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* SHOW MENU BUTTON */
+    .menu-btn{
+        display: block;
+    }
+
+    /* HEADER STACK */
+    .top-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .doctor-profile{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .page-title h1{
+        font-size: 22px;
+    }
+
+    /* PATIENT GRID STACK */
+    .patient-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* CONSULTATION FORM STACK */
+    .form-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* TEXTAREAS & INPUTS FULL WIDTH */
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+        font-size: 14px;
+    }
+
+    /* BUTTONS STACK */
+    .btn-group{
+        flex-direction: column;
+    }
+
+    .btn-group button{
+        width: 100%;
+    }
+
+    /* HISTORY TABLE SCROLL */
+    .consultation-history{
+        overflow-x: auto;
+    }
+
+    table{
+        min-width: 700px;
+    }
+
+    /* HISTORY HEADER STACK */
+    .history-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-header input{
+        width: 100%;
+    }
+}
+
+/* =========================
+   SMALL MOBILE (480px and below)
+========================= */
+@media (max-width: 480px) {
+
+    .logo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .logo h2{
+        font-size: 16px;
+    }
+
+    .logo p{
+        font-size: 11px;
+    }
+
+    .summary-card{
+        padding: 18px;
+    }
+
+    .consultation-card{
+        padding: 18px;
+    }
+
+    .section-title{
+        font-size: 16px;
+    }
+
+    .btn-group button{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    table th,
+    table td{
+        padding: 10px;
+        font-size: 13px;
+    }
+}

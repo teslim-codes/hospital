@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/index.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+            <div>
+                <h2>ORE-OFE HOSPITAL</h2>
+                <p>Digital File Transfer System</p>
+            </div>
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li>
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li>
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li>
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="hospital-info">
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    12 Health Avenue, Ile-Ife
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    +234 803 456 7890
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@oreofehospital.com
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="datetime">
+                    <h4>May 29, 2025</h4>
+                    <span>10:30 AM</span>
+                </div>
+
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>7</span>
+                </div>
+
+                <div class="user">
+
+                    <img src="images/doctor.jpg" alt="">
+
+                    <div>
+                        <h4>Dr. Ademola A.</h4>
+                        <span>Doctor</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PAGE TITLE -->
+
+        <section class="page-title">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back to Ore-Ofe Hospital File Transfer System</p>
+            </div>
+
+            <button class="new-btn">
+                <a href="./patients.html">
+                    <i class="fa-solid fa-plus"></i>
+                New Patient
+                </a>
+            </button>
+
+        </section>
+
+        <!-- STATS -->
+
+        <section class="stats">
+
+            <div class="card blue">
+                <i class="fa-solid fa-users"></i>
+                <h2>1,250</h2>
+                <p>Total Patients</p>
+            </div>
+
+            <div class="card green">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h2>58</h2>
+                <p>Today's Consultations</p>
+            </div>
+
+            <div class="card orange">
+                <i class="fa-solid fa-file-medical"></i>
+                <h2>23</h2>
+                <p>Pending Prescriptions</p>
+            </div>
+
+            <div class="card purple">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h2>146</h2>
+                <p>Sent Records</p>
+            </div>
+
+        </section>
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="action-grid">
+
+                <button>
+                   <a href="./patients.html">
+                     <i class="fa-solid fa-user-plus"></i>
+                    Create Patient
+                   </a>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search Patient
+                </button>
+
+                <button>
+                    <a href="./consultations.html">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    Consultation
+                </a>
+                </button>
+
+                <button>
+                    <a href="./prescriptions.html">
+                        <i class="fa-solid fa-prescription"></i>
+                    New Prescription
+                    </a>
+                </button>
+
+                <button>
+                   <a href="./sent-records.html">
+                     <i class="fa-solid fa-share"></i>
+                    Sent Record
+                   </a>
+                </button>
+
+                <button>
+                   <a href="./report&analysis.html">
+                <i class="fa-solid fa-chart-column"></i>
+                    View Reports
+                   </a>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- TABLE SECTION -->
+
+        <section class="table-section">
+
+            <div class="table-header">
+
+                <h2>Recent Patients</h2>
+
+                <input type="text"
+                placeholder="Search Patient">
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Doctor</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+                </thead>
+
+                <tbody>
+
+                <tr>
+                    <td>PAT001</td>
+                    <td>John Emmanuel</td>
+                    <td>34</td>
+                    <td>Dr. Ademola</td>
+                    <td>
+                        <span class="status active">
+                            Active
+                        </span>
+                    </td>
+                    <td>
+                        <button>View</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PAT002</td>
+                    <td>Mary Abass</td>
+                    <td>28</td>
+                    <td>Dr. Yusuf</td>
+                    <td>
+                        <span class="status pending">
+                            Pending
+                        </span>
+                    </td>
+                    <td>
+                        <button>View</button>
+                    </td>
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- NOTIFICATIONS -->
+
+        <section class="notifications">
+
+            <h2>Recent Notifications</h2>
+
+            <div class="notification-card">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <div>
+
+                    <h4>New Prescription Sent</h4>
+
+                    <p>
+                        Prescription sent to Pharmacy Desk.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="notification-card">
+
+                <i class="fa-solid fa-check"></i>
+
+                <div>
+
+                    <h4>Prescription Dispensed</h4>
+
+                    <p>
+                        Medication delivered successfully.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/index.js"></script>
+
+</body>
+</html>

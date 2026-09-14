@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patients | Ore-Ofe Hospital</title>
+
+<link rel="stylesheet" href="./css/patients.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png">
+
+            <div>
+                <h2>ORE-OFE HOSPITAL</h2>
+                <p>Digital File Transfer System</p>
+            </div>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="./patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="./consultations.html">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Consultations
+                </a>
+            </li>
+
+            <li>
+                <a href="./prescriptions.html">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="./sent-records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Sent Records
+                </a>
+            </li>
+
+            <li>
+                <a href="./patient-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Patient History
+                </a>
+            </li>
+
+            <li>
+                <a href="./pharmacy-desk.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Pharmacy Desk
+                </a>
+            </li>
+
+            <li>
+                <a href="./report&analysis.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports & Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="./notifications.html">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="./settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="./logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+            
+        </ul>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="hospital-contact">
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    12 Health Avenue, Ile-Ife
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    +234 803 456 7890
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@oreofehospital.com
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span>7</span>
+
+                </div>
+
+                <div class="user">
+
+                    <img src="images/doctor.jpg">
+
+                    <div>
+                        <h4>Dr. Ademola A.</h4>
+                        <span>Doctor</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- TITLE -->
+
+        <section class="page-title">
+
+            <div>
+                <h1>Patients</h1>
+                <p>Manage patient records and information</p>
+            </div>
+
+            <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+                New Patient
+            </button>
+
+        </section>
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="card blue">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>1,250</h2>
+
+                <p>Total Patients</p>
+
+            </div>
+
+            <div class="card green">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                <h2>1,020</h2>
+
+                <p>Active Patients</p>
+
+            </div>
+
+            <div class="card orange">
+
+                <i class="fa-solid fa-user-clock"></i>
+
+                <h2>145</h2>
+
+                <p>Pending Review</p>
+
+            </div>
+
+            <div class="card purple">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+                <h2>85</h2>
+
+                <p>New This Month</p>
+
+            </div>
+
+        </section>
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+            <input
+            type="text"
+            id="searchPatient"
+            placeholder="Search Patient Name, ID, Phone Number">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+
+        </section>
+
+        <!-- PATIENT TABLE -->
+
+        <section class="table-wrapper">
+
+            <div class="table-header">
+
+                <h2>Patient Records</h2>
+
+                <div class="filters">
+
+                    <select>
+
+                        <option>All Patients</option>
+                        <option>Active</option>
+                        <option>Pending</option>
+
+                    </select>
+
+                    <button class="export-btn">
+
+                        Export
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <table id="patientsTable">
+
+                <thead>
+
+                <tr>
+
+                    <th>Patient ID</th>
+                    <th>Full Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Blood Group</th>
+                    <th>Status</th>
+                    <th>Action</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody>
+
+                <tr>
+
+                    <td>PAT00126</td>
+                    <td>John Emmanuel</td>
+                    <td>34</td>
+                    <td>Male</td>
+                    <td>08034567890</td>
+                    <td>O+</td>
+
+                    <td>
+                        <span class="status active">
+                            Active
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <button class="view-btn">
+                            View
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>PAT00127</td>
+                    <td>Mary Abass</td>
+                    <td>28</td>
+                    <td>Female</td>
+                    <td>08098765432</td>
+                    <td>A+</td>
+
+                    <td>
+                        <span class="status pending">
+                            Pending
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <button class="view-btn">
+                            View
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- PATIENT SUMMARY -->
+
+        <section class="summary-grid">
+
+            <div class="summary-card">
+
+                <h3>Recent Registration</h3>
+
+                <p>
+                    25 patients registered this week.
+                </p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <h3>Appointments</h3>
+
+                <p>
+                    58 consultations scheduled today.
+                </p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <h3>Follow-Up Cases</h3>
+
+                <p>
+                    17 follow-up appointments pending.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="./js/patient.js"></script>
+
+</body>
+</html>
